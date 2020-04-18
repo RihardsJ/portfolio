@@ -12,11 +12,23 @@
 
     <!-- css styles -->
     <link rel="stylesheet" href="style.css">
-
+    <link rel="stylesheet" href="carousel-style.css">
 </head>
 <body>
     <!-- navigation bar -->
-    <header></header>
+    <header>
+        <nav>
+            <ul>
+                <li>myProfile</li>
+                <li>myStory</li>
+                <li>carousel</li>
+                <li>myLearning</li>
+                <li>FAC</li>
+                <li>myPortfolio</li>
+                <li>Conntact Me</li>
+            </ul>
+        </nav>
+    </header>
     <!-- end of navigation bar -->
 
     <!-- main body -->
@@ -38,7 +50,7 @@
             For few years I was enjoying afternoon teas and Sunday roasts but somehow, I was not happy with what I was doing. One day I decided to hit the road again and look for better opportunities in the capital. I missed calculated my expenses and ended up spending all my money for the rent. To be sure that I have food in my fridge I started to work in bars (apparently, I am making great espresso martinis &#9786). 
             Martinis are cool but still my childhood dream is living in me. I started to do some C++ coding lessons online just to remember good old days and few month ago I bought a laptop and used my old-warrior to install Linux just to remember how it works. Online lessons are great but I feel that I need some guidance and mentoring to further develop my-self. Unfortunately, the virus arrived and most of things has stopped all over but this time I will not change my direction &#128170.      
         </p>
-            <img src="/images/punch.jpg" alt="me-practice-kickbox">  
+            <img src="images/punch.jpg">  
         
 
         <!--fun fact about Rihards name-->
@@ -73,7 +85,16 @@
      
      <!--here are is the image-carousel with pictures of pleces where I have visited-->
      <div id="imageCarousel"></div>
-        <h2>Image carousel with palces that I have visited</h2>
+        <h2>Image carousel</h2>
+        <div id="carouselContainer">
+            <p class="caption">My Pictures</p>
+        <div class="imageContainer"></div>
+    
+            <button id="buttonLeft"><<</button>
+            <button id="playButton">> / ||</button>
+            <button id="buttonRight">>></button>
+      
+        </div>
 
 
       <!--contain links to freeCodeCamp and Codewars pages-->
@@ -125,12 +146,14 @@
    
 
      <!--portfolio of webPages that was made during pre-paration for the FAC summer cohort-->
-     <div id="myPortfolio"></div>   
+     <div id="myPortfolio"></div>
+        <h2>myPortfolio</h2>   
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non perspiciatis minus quod sequi hic, impedit vero? Necessitatibus modi nesciunt exercitationem nam? Exercitationem quisquam ab, qui optio maxime magnam possimus sed? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo odit sunt modi laudantium porro expedita iste soluta atque, fugiat nulla sapiente quod voluptatem optio ducimus voluptatibus, deleniti repellendus libero beatae.             
             </p>
 
     <!--link to Rihard`s github and links to his social media -->
      <div id="contactMe">
+         <h2>Contact Me</h2>
          <table>
              <tr>
                  <td>e-mail</td>
@@ -153,6 +176,6 @@
     </footer>
     <!-- end of contats section -->
 
-    <script src="main.js"></script>
+    <script src="carousel.js"></script>
 </body>
 </html>
