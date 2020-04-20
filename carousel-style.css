@@ -1,12 +1,10 @@
 /* button styling and positioning */
 #carouselContainer {
     text-align: center;
-    background:linear-gradient(45deg,rgb(218, 208, 208), rgb(80, 79, 79));
     width: 90%;
-    max-width: 600px;
-    height: auto;
+    max-width: 900px;
     margin: auto;
-    padding: 30px;
+    padding: 0;
     overflow: hidden;
     box-shadow: 10px 10px 3px 10px rgb(126, 124, 119);
     position: relative;
@@ -16,11 +14,11 @@
 button {
     background-color: rgb(92, 87, 87);
     border-style: none;
-    color: rgb(146, 141, 141);
+    color: rgb(255, 255, 255);
     font-size: xx-large;
     font-weight: 900;
     font-family: "Arial";
-    opacity: 0.1;
+    opacity: 0.3;
     position: absolute;
     z-index: 99;    /* 99 value ensures that the buttons stays on top of the images */
 }
@@ -28,18 +26,15 @@ button {
 #buttonLeft {
     left: 0;
     top: 45%;
-    margin-left: 30px;
 }
 
 #buttonRight{
     right: 0;
     top: 45%;
-    margin-right: 30px;
 }
 
 #playButton{
     bottom: 0;
-    margin-bottom: 30px;
 }
 
 button:hover {
@@ -58,29 +53,22 @@ button:hover {
 
 .imgOFF {
     display: none;
-    width: 100%;
-    height: inherit;
-    margin: 0;
-    padding: 0;
 }
 
 .imgON {
     display: block;
     width: 100%;
-    height: inherit;
-    margin: 0;
-    padding: 0;
 }
 
 .caption{
     color: #e9e5e5;
     text-shadow: 1px 1px 2px rgb(46, 46, 45) ;
     font-weight: 900;
-    font-size: 2.2vw;
+    font-size: 2vw;
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding:0;
-    position: absolute;
-    left: 0%;
-    margin-left: 30px;
+    position: absolute; 
+    padding-top: 20px;
+    padding-left: 15px;
 }
