@@ -1,13 +1,18 @@
 /* button styling and positioning */
 #carouselContainer {
+    border-radius: 3%;
     text-align: center;
     width: 90%;
     max-width: 900px;
     margin: auto;
     padding: 0;
     overflow: hidden;
-    box-shadow: 10px 10px 3px 10px rgb(126, 124, 119);
     position: relative;
+
+    transition: transform 4s;
+    transform-style: preserve-3d;
+    transform-origin: center right;
+    perspective: 500px;
 }
 
 /* button styling */
@@ -41,14 +46,16 @@ button:hover {
     opacity: 0.7;
 }
 
-/* image positioning */
+/*~~~~~~~~~~~~~image positioning~~~~~~~~~~~~~~~~~~*/
+
+
 .imageContainer{
-    background-color: rgb(37, 37, 36);
     width: 100%;
     height: 100%;
     margin:0;
     padding: 0;      
     overflow: hidden;
+    position: relative;
 }
 
 .imgOFF {
@@ -58,17 +65,37 @@ button:hover {
 .imgON {
     display: block;
     width: 100%;
+    backface-visibility: hidden;
 }
+
+
+
+
+
+/*~~~~~~~~~~~~~image flip animation~~~~~~~~~~~~~~~~~~*/
+
+.rotate {
+    transform: translateX(-100%) rotateY(-180deg);
+  }
+
+  .back {
+    transform: rotateY(180deg);
+}
+
+/*~~~~~~~~~~~~~carouse image caption styling~~~~~~~~~~~~~~~~~~*/
 
 .caption{
     color: #e9e5e5;
     text-shadow: 1px 1px 2px rgb(46, 46, 45) ;
     font-weight: 900;
-    font-size: 2vw;
+    font-size: 1.6vw;
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding:0;
     position: absolute; 
     padding-top: 20px;
     padding-left: 15px;
+    z-index: 100;
 }
+
+
