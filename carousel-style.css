@@ -16,7 +16,7 @@
 }
 
 /* button styling */
-button {
+.imageFrame button {
     background-color: rgb(92, 87, 87);
     border-style: none;
     color: rgb(255, 255, 255);

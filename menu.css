@@ -1,0 +1,102 @@
+
+/* button section */
+
+#menuButton {
+    background-color: #055356;
+    border-style: none;
+    padding: 15px 25px;
+    color: rgb(219, 219, 219);
+    border-radius: 0 5% 5% 0;
+    font-weight: 900;
+    padding: 15px 25px;  
+    position: absolute;
+    top: 0;
+    left: 250px;  
+}
+
+#menuButton:hover{
+    cursor: pointer;   
+}
+
+/* side navigation color and positioning */
+#navigation {
+    background: linear-gradient(20deg, #073040, #055557);
+    position: fixed;
+    left: -250px;
+    top: 0;
+    height: 100%;
+    width: 250px;
+    z-index: 1;
+}
+
+#menu {
+    list-style: none;
+    margin-top: 25%;
+    padding-left: 0;
+}
+
+#menu a {
+    text-decoration: none;
+    color: #E9E9E9;
+    text-transform: uppercase;
+}
+
+.menuItem {
+    padding: 0;
+    opacity: 0;
+}
+
+    /*~~~~animations - opening and closing menu; link animation during menu opening ~~~~*/
+
+ /* menu slide out */
+.openMenu {
+    transform: translateX(250px);
+}
+
+.buttonSlideIn {
+    transform: translateX(-67px);
+}
+
+#navigation, #main, #menuButton {
+    transition: transform, 1s;
+    transition-timing-function: ease-in-out;
+}
+
+
+/* menu link animation */
+.menuAnimation {
+    animation-fill-mode: forwards;
+    animation-name: liAnimation;
+    animation-delay: 1s;
+    animation-duration: 3s;
+}
+
+@keyframes liAnimation{
+    0% {
+        padding: 0; 
+        opacity: 0; 
+        transform: translateX(0);
+    }
+
+    100% {
+        padding: 10px;
+        opacity: 1; 
+        transform: translateY(100%);
+    }
+  }
+
+  /* onmouse hover menu link animation */
+
+.link:hover {
+    animation: bounce 2s;
+    color: #BD3632;
+}
+
+@keyframes bounce {
+    0%{transform: scaleX(0.4); color: rgb(240, 240, 240)}
+    10%{transform: scaleX(1.1);}
+    20%{transform: scaleX(0.5);}
+    50%{transform: scaleX(1.2);}
+    70%{transform: scaleX(0.8);}
+    100%{transform: scaleX(1);}
+}

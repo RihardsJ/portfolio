@@ -13,32 +13,36 @@
     <!-- css styles -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="carousel-style.css">
+    <link rel="stylesheet" href="menu.css">
 </head>
 <body>
     <!-- navigation bar -->
-    <header>
-        <nav>
-            <ul>
-                <li>myProfile</li>
-                <li>carousel</li>
-                <li>myLearning</li>
-                <li>FAC</li>
-                <li>myPortfolio</li>
-                <li>Conntact Me</li>
-            </ul>
-        </nav>
-    </header>
+    <nav id="navigation">
+        <button id="menuButton">&#8499;</button>
+
+        <ul id="menu">
+            <li class="menuItem"><a href="#myProfile"><h3 class="link">profile<h3/></a></li>
+            <li class="menuItem"><a href="#carouselContainer"><h3 class="link">carousel</h3></a></li>
+            <li class="menuItem"><a href="#myLearning"><h3 class="link">my Learning</h3></a></li>
+            <li class="menuItem"><a href="#fac"><h3 class="link">fac</h3></li>
+            <li class="menuItem"><a href="#myPortfolio"><h3 class="link">portfolio</h3></a></li>
+            <li class="menuItem"><a href="#contactMe"><h3 class="link">conntact Me</h3></a></li>  
+        </ul>
+    </nav>
     <!-- end of navigation bar -->
 
     <!-- main body -->
-    <main id="main-container">
+    <main id="main">
 
      <!-- profile section is an introduction to the page -->   
      <div id="myProfile">
-         <h4>Rihards Jukna</h4>
-         <h1>Hell and Welcome! I am riHards and this is my portfolio website!</h1>
-     </div>
+        <h4>Rihards Jukna</h4>
+        <h1>Welcome to my portfolio webpage!</h1>
+        <p><q>Innovation is serendipity, so you don't know what people will make.</q>"<br><strong>Tim Barners-Lee</strong></p>
 
+        <p>Turn on the music and let`s go! &#10152;
+           <button id="music">&#9835;</button></p>
+    </div>
         <!--fun fact about Rihards name-->
         <p>
             Most probably you wonder how to pronounce my name. Well let me help you with that. <br>
@@ -163,5 +167,6 @@
     <!-- end of contats section -->
 
     <script src="carousel.js"></script>
+        <script src="menu.js"></script>
 </body>
 </html>
