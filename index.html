@@ -11,10 +11,12 @@
     <title>Rihards - Portfolio WebPage</title>
 
     <!-- css styles -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="main-style.css">
     <link rel="stylesheet" href="carousel-style.css">
     <link rel="stylesheet" href="menu.css">
 </head>
+
+
 <body>
     <!-- navigation bar -->
     <nav id="navigation">
@@ -31,24 +33,42 @@
     </nav>
     <!-- end of navigation bar -->
 
+
     <!-- main body -->
     <main id="main">
 
      <!-- profile section is an introduction to the page -->   
      <div id="myProfile">
-        <h4>Rihards Jukna</h4>
-        <h1>Welcome to my portfolio webpage!</h1>
-        <p><q>Innovation is serendipity, so you don't know what people will make.</q>"<br><strong>Tim Barners-Lee</strong></p>
+        <h4 class="name">Rihards Jukna</h4>
+        
+        <div class="welcome-section">
+            <h1 class="welcome">Welcome to my portfolio webpage!</h1>
+            <p class="quote"><q>Innovation is serendipity, so you don't know what people will make.</q><br><strong>Tim Barners-Lee</strong></p>
+        </div>
 
-        <p>Turn on the music and let`s go! &#10152;
-           <button id="music">&#9835;</button></p>
+        <div>
+            <p class="sound">Befor we move on let`s play some music! &#10152;
+            <button id="musicButton">&#119188;</button></p>
+        </div>
+
+        <audio id="backgroundMusic">
+            <source src="bensound-dreams.mp3" type="audio/mpeg">
+        </audio>
+
+        <div class="scrollDown">    
+            <div class="scrollArrow"></div>
+        </div>
     </div>
+
+
+
         <!--fun fact about Rihards name-->
+        <div id="funFact">
         <p>
             Most probably you wonder how to pronounce my name. Well let me help you with that. <br>
             Do you remember this guy:  
         </p>
-            <img src="images/die-hard.jpg" alt="bruce willis">
+            <img src="images/die-hard.jpg" alt="bruce willis" class="dieHardImg">
         <p>
             Exactly! Ri{Hard}! 
         </p>
@@ -71,7 +91,7 @@
             <li>Web Development</li>
         </ul>
      </div>  
-   
+    </div>
      
      <!--here are is the image-carousel with pictures of pleces where I have visited-->
      <div id="carouselContainer">
@@ -154,19 +174,19 @@
          </table>
      </div>   
 
+   <!-- contacts section -->
+   <footer id=footer>
+    <h2>That`s all!</h2>
+    <p>Thank you for your time!</p>
+    <p>RJ | London | 2020</p>
+</footer>
+<!-- end of contats section -->
+
     </main>
     <!-- end of main body -->
 
-
-    <!-- contacts section -->
-    <footer id=footer>
-        <h2>That`s all!</h2>
-        <p>Thank you for your time!</p>
-        <p>RJ | London | 2020</p>
-    </footer>
-    <!-- end of contats section -->
-
     <script src="carousel.js"></script>
         <script src="menu.js"></script>
+            <script src="audio.js"></script>
 </body>
 </html>

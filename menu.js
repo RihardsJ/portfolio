@@ -13,7 +13,8 @@ function menuLinkAnimation(){
 // button clik animatiom
 menuButton.addEventListener("click", () => {
     menu.classList.toggle("openMenu");  
-    mainDocument.classList.toggle("openMenu");  
+    mainDocument.classList.toggle("openMenu");
+    mainDocument.classList.toggle("changeMainWidth");
     menuButton.classList.toggle("buttonSlideIn");
     menuLinkAnimation();
 });

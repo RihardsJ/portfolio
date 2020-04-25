@@ -62,7 +62,6 @@
     transition-timing-function: ease-in-out;
 }
 
-
 /* menu link animation */
 .menuAnimation {
     animation-fill-mode: forwards;
@@ -84,6 +83,20 @@
         transform: translateY(100%);
     }
   }
+
+ /* change width of main container during animation to fit in the screen  */
+.changeMainWidth {
+    animation: WidthChange;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes WidthChange {
+    0% {width: 90%;}
+    100% {width: 60%;}  
+}
+
+
 
   /* onmouse hover menu link animation */
 
