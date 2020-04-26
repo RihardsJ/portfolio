@@ -24,7 +24,7 @@
 
         <ul id="menu">
             <li class="menuItem"><a href="#myProfile"><h3 class="link">profile<h3/></a></li>
-            <li class="menuItem"><a href="#carouselContainer"><h3 class="link">carousel</h3></a></li>
+            <li class="menuItem"><a href="#carousel"><h3 class="link">carousel</h3></a></li>
             <li class="menuItem"><a href="#myLearning"><h3 class="link">my Learning</h3></a></li>
             <li class="menuItem"><a href="#fac"><h3 class="link">fac</h3></li>
             <li class="menuItem"><a href="#myPortfolio"><h3 class="link">portfolio</h3></a></li>
@@ -57,67 +57,70 @@
 
         <div class="scrollDown">    
             <div class="scrollArrow"></div>
-        </div>
+        </div>   
     </div>
 
 
 
-        <!--fun fact about Rihards name-->
-        <div id="funFact">
+    <!--fun fact about Rihards name-->
+    <div id="funFact">
+            <p>Most probably you wonder how to pronounce my name.</p>
         <p>
-            Most probably you wonder how to pronounce my name. Well let me help you with that. <br>
-            Do you remember this guy:  
+            Mr Bruce Willis knows how to pronounce my name and he can help you with that. <br>
+            Just hover over him he will help you! 
         </p>
-            <img src="images/die-hard.jpg" alt="bruce willis" class="dieHardImg">
-        <p>
-            Exactly! Ri{Hard}! 
-        </p>
-
-        <div>
-        <h2>My Name is also easy to remember</h2>
-        <p class="hard">Work hard | Play hard</p>
-        <strong>Ri Hard</strong>
+            <div class="dieHard">
+                <div class="overlay">
+                    <p class="bWillis">Die Hard!</p>
+                </div>
+                <p>
+                    If you want to know some more facts about my name just hit her <a href="https://www.thenamemeaning.com/rihards/" alt="link to rihards name meaning" target="_blank">thenamemeaning.com</a>.  
+                </p>
+            </div>
         </div>
+  
+<div class="preferables">
+    <p class="laptopTitle">There are four things that I like the most in no particular order</p>
 
-        <p>
-            Apparently, the name is French-Latvian origin and its variations are found all over the world. If you want to know some more facts about it just hit her <a href="https://www.thenamemeaning.com/rihards/" alt="link to rihards name meaning" target="_blank">thenamemeaning.com</a>.  
-        </p>
+    <div class="laptop">
 
-        <p>There are two x 2 things that I like the most in no particular order:</p>
-        <ul>
-            <li>Coffee</li>
-            <li>Onions</li>
-            <li>JavaScript</li>
-            <li>Web Development</li>
-        </ul>
-     </div>  
-    </div>
+        <form id="preference-list" >
+            <label for="coffee"><input type="radio" value="coffee" name="preferable" checked>Coffee</label>
+                <label for="onions"><input type="radio" value="onions" name="preferable">Onions</label>
+                <label for="javaScript"><input type="radio" value="javaScript" name="preferable">JavaScript</label>
+            <label for="webDevelopment"><input type="radio" value="web-design" name="preferable">Web Development</label>
+        </form>
+        <div class="laptopScreen"></div>
+    </div>                
+</div>
+
+   
      
      <!--here are is the image-carousel with pictures of pleces where I have visited-->
-     <div id="carouselContainer">
-
-        <div class="imageFrame">  
-          
-          <p class="caption">robin hood</p>        
-      <div class="imageContainer"></div>
-          <button id="buttonLeft"><<</button>
-          <button id="playButton">> / II</button>
-          <button id="buttonRight">>></button>
-        </div>
-      </div>
-
+    <div id="carousel">
+        <h2>Some of my memories</h2>
+            
+        <div id="carouselContainer">
+                <div class="imageFrame">           
+                <p class="caption">robin hood</p>        
+            <div class="imageContainer"></div>
+                <button id="buttonLeft"><<</button>
+                <button id="playButton">> / II</button>
+                <button id="buttonRight">>></button>
+                </div>
+            </div>
+    </div>
 
       <!--contain links to freeCodeCamp and Codewars pages-->
       <div id="myLearning">
         <h2>myLearning</h2>
             <p><strong>
-               Here is my progress with Codewars and freeCodeCamp 
+               Links to my freeCodeCamp and Codewars profiles
             </strong></p>
-            <ul>
-                <li>freeCodeCamp</li>
-                <li>codeWars</li>
-                <li>codecadey</li>
-            </ul>
+        <div class="progress">
+            <div class="freeCodeCampDiv"></div>
+            <div class="codeWarsDiv"></div>
+        </div>
       </div>
       <!--end of -->
 
@@ -136,50 +139,41 @@
             “Those who know, do. Those that understand, teach.” <br>
             ― Aristotle
          </q>
-            <p>
-                I enjoy teaching and guiding others and as Aristotle mentioned it is also a tool to gain deeper understanding about any subject. Not to mention that Codewars are fun to do together and I want to reach kyu1 one day.  
-            </p>
                 <p>
                     I enjoy teaching and guiding others and as Aristotle mentioned it is also a tool to gain deeper understanding about any subject. Not to mention that Codewars are fun to do together and I want to reach kyu1 one day.  
-                </p>
-                <p>
                     It is an awesome opportunity to be connected with like-minded people and pursue the same dream. I am extremely motivated to start Summer cohort and I believe it will be a great journey.   
-                </p>
-                <p>
                     I am looking forward for the interview!
-                    Please follow the link for the source code of this portfolio website: <a href="https://github.com/RihardsJ/rihardsj.github.io">Github link</a>.
+                    Please follow the link for the source code of this portfolio website: <a href="https://github.com/RihardsJ/portfolio" target="_blank">Github link</a>.
                      
                 </p>
          </article>
 
      </div>  
    
-
      <!--portfolio of webPages that was made during pre-paration for the FAC summer cohort-->
-     <div id="myPortfolio"></div>
-        <h2>myPortfolio</h2>   
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non perspiciatis minus quod sequi hic, impedit vero? Necessitatibus modi nesciunt exercitationem nam? Exercitationem quisquam ab, qui optio maxime magnam possimus sed? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo odit sunt modi laudantium porro expedita iste soluta atque, fugiat nulla sapiente quod voluptatem optio ducimus voluptatibus, deleniti repellendus libero beatae.             
-            </p>
+     <div id="myPortfolio">
+        <h2>My Portfolio Pages</h2>   
 
+                <button id="dmr-tributo">Denis Ritchie tributo</button>
+                <button id="surveyPage">Tributo page survey</button>
+                <button id="jsAlgorithms">JS Algorithms</button>
+                <button id="tightHugs">Tight Hugs</button>
+
+            <p>All four pages were part of freeCodeCamp course and all have been made for training purposes only!</p>
+        </div>
     <!--link to Rihard`s github and links to his social media -->
      <div id="contactMe">
          <h2>Contact Me</h2>
-         <table>
-             <tr>
-                 <td>e-mail</td>
-                 <td>facebook</td>
-                 <td>instargam</td>
-                 <td>github</td>
-                 </tr>
-         </table>
-     </div>   
+        <p class="e-mail"><a href="mailto:rihards.jukna@gmail.com">&#9993;</a></p>
+
 
    <!-- contacts section -->
-   <footer id=footer>
-    <h2>That`s all!</h2>
-    <p>Thank you for your time!</p>
-    <p>RJ | London | 2020</p>
-</footer>
+    <footer id=footer>
+        <h2>That`s all!</h2>
+            <p>If you like the music please vist: <a href="https://www.bensound.com/" target="_blank" >bensound.com</a></p>
+                <p>Thank you for your time!</p>    
+             <p>RJ | London | 2020</p>
+    </footer>
 <!-- end of contats section -->
 
     </main>
@@ -188,5 +182,6 @@
     <script src="carousel.js"></script>
         <script src="menu.js"></script>
             <script src="audio.js"></script>
+             <script src="main.js"></script>
 </body>
 </html>

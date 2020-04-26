@@ -1,38 +1,4 @@
-/*
-#073040 - blue
-#255459 - green
-#F2CC85 - medium yellow
-#F2B66D - dark yellow
-#F2D7B6 - light yellow
 
-#DFF2B6 - lime
-#F2A099 - pink
-
-#404040 -  text color black text color
-
-#F2EFE4
-#CB8C1D
-#4C3327
-#BD3632 
-
-
-.color-theme_brain-1-hex { color: #424073; }
-.color-theme_brain-2-hex { color: #79BAF2; } -blue
-.color-theme_brain-3-hex { color: #D5D971; } -green 
-.color-theme_brain-4-hex { color: #F2B077; } -light brown
-.color-theme_brain-5-hex { color: #F2887E; } -dark brown
-
-
-.color-theme_brain-1-rgba { color: rgba(66, 64, 115, 1); }
-.color-theme_brain-2-rgba { color: rgba(121, 186, 242, 1); }
-.color-theme_brain-3-rgba { color: rgba(213, 217, 113, 1); }
-.color-theme_brain-4-rgba { color: rgba(242, 176, 119, 1); }
-.color-theme_brain-5-rgba { color: rgba(242, 136, 126, 1); } 
-*/
-
-    /* background: linear-gradient(-45deg, rgb(173, 98, 52) 10%, rgb(143, 55, 0) 80%); */
-    /* background: linear-gradient(35deg, #5d6a77 10%, #222930 80%); */
-    /* background-color: rgb(66, 136, 197); */
 html {
     scroll-behavior: smooth;
 }
@@ -46,6 +12,7 @@ body {
     color: rgb(219, 219, 219);
     text-align: center;
     overflow-x: hidden;
+    cursor: url("images/cursor.png"), auto;
 }
 
 #main {
@@ -112,9 +79,6 @@ body {
     animation: jump 0.75s infinite;
 }
 
-/* animation: jump 1s infinite; */
-
-
 /* 1.3 Profile section animations */
 
 @keyframes slideLeft {
@@ -145,24 +109,147 @@ body {
     100% {transform: translateY(-50%);}
 }
 
-/* ~~~~~~funFact section~~~~~ */
+/* 2. ~~~~~~funFact section~~~~~ */
 #funFact {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     height: 100vh;
     margin-bottom: 50px;
 }
 /* image styling */
-.dieHardImg {
-    max-width: 512px;
+.dieHard {
+    box-shadow: 10px 9px 5px 0px rgba(68, 67, 67, 0.75);
+    border-radius: 5px;
+    width: 55%;
+    height: auto;
+    min-height: 400px;
+    background-image: url("images/die-hard.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-self: center;
+}
+
+.overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(133, 117, 84, 0.466);
+    text-align: center;
+    cursor: zoom-in;
+}
+
+.bWillis {
+    color: rgba(255, 255, 255, 0.76);
+    font-size: 3rem;
+    min-width: 300px;
+    padding: 5%;
+}
+
+/* #. ~~~~~~laptop section~~~~~ */
+.laptopTitle {
+    text-align: left;
+}
+
+.laptop {
+    position: relative;
+    max-width: 740px;
+    min-width: 40px;
+    box-shadow: 0 0 2px 1px  rgb(174, 177, 92);
+    border-style: solid;
+    border-width: 20px;
+    border-color: rgba(37, 37, 37, 0.75);
+    border-radius: 7px;
+    background-color: rgb(116, 115, 115);
+    width: 70%;
+}
+
+.laptop:after{
+    content: "";
+    background-color: rgb(174, 177, 92);
+    position: absolute;
+    height: 25px;
+    right: -10%;
+    left: -10%;
+    border-radius: 5px;
+}
+
+.laptopScreen {
+    min-height: 380px;
+    height: auto;
+    width: 100%;
+    background-size: cover;
+}
+
+/* . ~~~~~~My Learning section~~~~~ */
+.progress {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 40vh;
+    width: 100%;
+}
+
+.freeCodeCampDiv, .codeWarsDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: grayscale(100%);
+    width: 35%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-width: 670px;
+    border-radius: 5px;
+    transition: all 1s ease-in;
+    cursor: pointer;
+}
+
+.freeCodeCampDiv {
+    background-image: url("images/freecodecampGreen.png");
+}
+
+.codeWarsDiv {
+    background-image: url("images/codewars.jpg");
+} 
+.freeCodeCampDiv:hover, .codeWarsDiv:hover {
+    transform: scale(1.1);
+    filter: grayscale(0);
+    z-index: 1;
 }
 
 
-
+/* #. ~~~~~~Founders and Coders section~~~~~ */
 #fac {
     border-style: dashed;
     border-color: rgb(219, 219, 219);
     margin-top: 10px;
     text-align: justify;
     text-indent: 10%;
+}
+
+/* #. ~~~~~~portfolio section~~~~~ */
+#myPortfolio button {
+    margin-left: 15px;
+    padding: 10px 25px;
+    font-size: smaller;
+    color: rgb(219, 219, 219);
+    background: linear-gradient(20deg, rgb(145, 91, 71) 10%, #C96542 60%);
+    box-shadow: 0px 0px 1px 3px rgb(95, 95, 95);
+    border-radius: 5px;
+}
+
+/* #. ~~~~~~contact me section~~~~~ */
+
+.e-mail a{
+    text-decoration: none;
+    color: rgb(219, 219, 219);
+    font-size: 80px;
+    font-weight: 900;
 }
 
 
