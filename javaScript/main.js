@@ -1,12 +1,11 @@
 
 // function change text on the Die Hard photo
-let changeName = document.querySelector(".bWillis").textContent;
-let newName = document.querySelector(".bWillis");
-let burce = document.querySelector(".overlay");
+let changeName = document.querySelector(".dieHardText").textContent;
+let newName = document.querySelector(".dieHardText");
+let burce = document.querySelector('.dieHard')
 let name = "d";
 
 let divideName = changeName.split(' ');
-console.log(divideName);
 
 
 burce.addEventListener("click", function (){
@@ -55,4 +54,24 @@ freeCodecamp.addEventListener("click", function(){
 });
 codewars.addEventListener("click", function(){
     open( "https://www.codewars.com/users/RihardsJ", "_blank");
+});
+
+// portfolio links
+let dmrTributo = document.querySelector("#dmr-tributo");
+let survey = document.querySelector("#surveyPage");
+let JSalgorithms = document.querySelector("#jsAlgorithms");
+let tightHugs = document.querySelector("#tightHugs");
+
+
+dmrTributo.addEventListener("click", function(){
+    open( "https://codepen.io/rihardsj/details/BaNMogP", "_blank");
+});
+survey.addEventListener("click", function(){
+    open( "https://codepen.io/rihardsj/pen/MWaYRew", "_blank");
+});
+JSalgorithms.addEventListener("click", function(){
+    open( "https://codepen.io/rihardsj/pen/ExVVPQg", "_blank");
+});
+tightHugs.addEventListener("click", function(){
+    open( "https://codepen.io/rihardsj/pen/BaoNXJv", "_blank");
 });

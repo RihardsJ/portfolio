@@ -7,13 +7,14 @@
     <meta name="description" content="A responsive portfolio website with image carousel">
 
     <!-- Page Title bar -->
-    <link rel="icon" href="images/icon.png" type="image/png">  
+    <link rel="icon" href="../images/icon.png" type="image/png">  
     <title>Rihards - Portfolio WebPage</title>
 
     <!-- css styles -->
-    <link rel="stylesheet" href="main-style.css">
-    <link rel="stylesheet" href="carousel-style.css">
-    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="css/main-style.css">
+    <link rel="stylesheet" href="css/carousel-style.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/media.css">
 </head>
 
 
@@ -40,7 +41,7 @@
      <!-- profile section is an introduction to the page -->   
      <div id="myProfile">
         <h4 class="name">Rihards Jukna</h4>
-        
+            <img src="images/profile.jpg" alt="profile-picture" class="profileImg">
         <div class="welcome-section">
             <h1 class="welcome">Welcome to my portfolio webpage!</h1>
             <p class="quote"><q>Innovation is serendipity, so you don't know what people will make.</q><br><strong>Tim Barners-Lee</strong></p>
@@ -66,20 +67,18 @@
     <div id="funFact">
             <p>Most probably you wonder how to pronounce my name.</p>
         <p>
-            Mr Bruce Willis knows how to pronounce my name and he can help you with that. <br>
-            Just hover over him he will help you! 
+            Mr Bruce Willis knows how to pronounce my name and he can help you with that.
+            Just click on him he will help you! 
         </p>
             <div class="dieHard">
-                <div class="overlay">
-                    <p class="bWillis">Die Hard!</p>
-                </div>
-                <p>
-                    If you want to know some more facts about my name just hit her <a href="https://www.thenamemeaning.com/rihards/" alt="link to rihards name meaning" target="_blank">thenamemeaning.com</a>.  
-                </p>
+                    <span class="dieHardText">Die Hard!</span>  
             </div>
+            <p>
+                If you want to know some more facts about my name just hit her <a href="https://www.thenamemeaning.com/rihards/" alt="link to rihards name meaning" target="_blank">thenamemeaning.com</a>.  
+            </p>
         </div>
   
-<div class="preferables">
+<div id="preferables">
     <p class="laptopTitle">There are four things that I like the most in no particular order</p>
 
     <div class="laptop">
@@ -118,30 +117,30 @@
                Links to my freeCodeCamp and Codewars profiles
             </strong></p>
         <div class="progress">
-            <div class="freeCodeCampDiv"></div>
-            <div class="codeWarsDiv"></div>
-        </div>
+            <img src="images/freecodecamp.png" class="freeCodeCampDiv" alt="freeCodeCamp">
+            <img src="images/codewars.png" class="codeWarsDiv" alt="codewars">
+      </div>
       </div>
       <!--end of -->
 
 
      <!--fac tells why Rihards is applying for the programme and Contain a link back to the GitHub repo-->
      <div id="fac">
-         <h2>Founders and Coders</h2>
-        <article>
+         <h2>Dear Founders and Coders!</h2>
+        <article class="letter">
          <p>
-            First of all, I would like to thank Gregor and Yvonne as well as the rest of the Founders and Coders team for the great month that I have had so far. It is an absolute pleasure to do pair programming. Just to be accepted for pre-course is already exciting thing that I was waiting for many years to happen. 
+            First of all, I would like to thank Gregor and Yvonne as well as the rest of the team for the great month that I have had so far. It is an absolute pleasure to do pair programming. Just to be accepted for pre-course is already exciting thing that I was waiting for many years to happen. 
          </p>
          <p>
-            I like the idea of Founders and Coders and I believe as a bootcamp it really stands out in comparison to others. While most of the bootcamps representing an idea of having a quick course with a job at the end Founders and Coders are highly focused on learning and development. The learning process is highly emphasized and that is what I am looking for. If I am ready to take a job in web development one day that`s great. However, at the moment I am to building skills and knowledge in the field. Therefore, I believe FAC is the best place to continue my learning.  The sweetest part is to have a chance to teach others once I have learned my-self.   
+            I am amazed by the idea of Founders and Coders and I believe as a bootcamp it really stands out in comparison to others. While most of the bootcamps representing an idea of having a quick course with a job at the end Founders and Coders are highly focused on learning and development. The learning process is highly emphasized and that is what I am looking for. If I am ready to take a job in web development one day that`s great. However, at the moment I am to building skills and knowledge in the field. Therefore, I believe FAC is the best place to continue my learning. The sweetest part is to have a chance to teach others once I have learned my-self.   
          </p>
          <q>
             “Those who know, do. Those that understand, teach.” <br>
             ― Aristotle
          </q>
                 <p>
-                    I enjoy teaching and guiding others and as Aristotle mentioned it is also a tool to gain deeper understanding about any subject. Not to mention that Codewars are fun to do together and I want to reach kyu1 one day.  
-                    It is an awesome opportunity to be connected with like-minded people and pursue the same dream. I am extremely motivated to start Summer cohort and I believe it will be a great journey.   
+                    I enjoy teaching and guiding others and as Aristotle mentioned it is also a tool to gain deeper understanding about any subject. Not to mention that Codewars are fun to do together and I am planning to reach kyu1 one day.  
+                    I am extremely motivated to join Summer cohort and I believe it will be a great journey.   
                     I am looking forward for the interview!
                     Please follow the link for the source code of this portfolio website: <a href="https://github.com/RihardsJ/portfolio" target="_blank">Github link</a>.
                      
@@ -153,13 +152,13 @@
      <!--portfolio of webPages that was made during pre-paration for the FAC summer cohort-->
      <div id="myPortfolio">
         <h2>My Portfolio Pages</h2>   
-
+            <div class="portfolioLinks">
                 <button id="dmr-tributo">Denis Ritchie tributo</button>
                 <button id="surveyPage">Tributo page survey</button>
                 <button id="jsAlgorithms">JS Algorithms</button>
                 <button id="tightHugs">Tight Hugs</button>
-
-            <p>All four pages were part of freeCodeCamp course and all have been made for training purposes only!</p>
+            </div>    
+            <p>All four pages were part of my freeCodeCamp course and all have been made for training purposes only!</p>
         </div>
     <!--link to Rihard`s github and links to his social media -->
      <div id="contactMe">
@@ -179,9 +178,9 @@
     </main>
     <!-- end of main body -->
 
-    <script src="carousel.js"></script>
-        <script src="menu.js"></script>
-            <script src="audio.js"></script>
-             <script src="main.js"></script>
+    <script src="javaScript/carousel.js"></script>
+        <script src="javaScript/menu.js"></script>
+            <script src="javaScript/audio.js"></script>
+             <script src="javaScript/main.js"></script>
 </body>
 </html>

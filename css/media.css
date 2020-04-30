@@ -1,0 +1,120 @@
+
+@media (max-width : 1322px){
+    body{
+        background: linear-gradient(45deg, rgb(123 123 122), rgb(12 120 12));
+    }
+
+    @keyframes WidthChange {
+        0% {width: 90%;}
+        100% {width: 50%;}  
+    }
+
+    .dieHard {
+        align-self: center;
+        width: 90%;
+    }
+}
+
+@media (max-width : 800px){
+    body{
+        background: linear-gradient(45deg, rgb(123 123 6), rgb(12 12 12));
+    }
+    .laptop {
+        border-bottom-width: 50px;
+        min-width: 250px;
+    }
+
+    .laptop:after{
+        content: "";
+        background-color: transparent;
+        border-radius: 100%;
+        border-style: solid;
+        border-color: rgb(174, 177, 92);
+        position: absolute;
+        height: 30px;
+        right: 46%;
+        left:  46%;
+    }
+
+    .dieHard {
+        width: 90%;
+    }
+
+    #navigation {
+        width: 100vw;
+        left: -100vw;
+        opacity: 0.95;
+    }
+
+    #menuButton {
+        left: 100vw;
+    }
+
+    .openMenu {
+        transform: translateX(0);
+    }
+    .openMenu800 {
+        transform: translateX(100vw);
+        
+    }
+
+}
+
+@media (max-width : 565px){
+    .laptop {
+        width: 90%;
+    }
+}
+
+@media (max-width : 500px){
+    body{
+        background: linear-gradient(45deg, rgb(123 123 6), rgb(12 12 12));
+    }
+
+    .profileImg {
+        max-width: 225px;
+    }
+
+    .dieHard{
+    min-height: 350px;
+    }
+
+    .progress {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .freeCodeCampDiv, .codeWarsDiv {
+        width: 100%;
+    }
+}
+
+
+@media (max-width : 455px){
+    .laptopScreen {
+        min-height: 270px;
+    }
+
+    .laptop:after{
+        height: 20px;
+    }
+   
+}
+
+@media (max-width : 300px){
+    .laptopScreen {
+        min-height: 220px;
+    }
+
+    .dieHard{
+        min-height: 250px;
+        }
+
+    .laptop{
+        min-width: 200px;
+    }
+    .laptop:after{
+        height: 15px;
+    }
+
+}
