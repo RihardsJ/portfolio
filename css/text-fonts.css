@@ -1,0 +1,148 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merienda&display=swap');
+
+
+/* 1. ~~~font families~~~ */
+/* 1.2 headings*/
+h1, h2, h4, .dieHardText {
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 700;
+}
+
+/* 1.3 body text and form labels */
+p, label {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;  
+}
+
+/* 1.4 navigation menu */
+.link {
+    font-family: 'Merienda', cursive;
+    font-weight: 400;
+}
+
+/* 2. font sizes */
+/* 2.1 heading sizes */
+h1 {
+    text-transform: uppercase;
+    font-size: 2.4vw;
+}
+
+h2 {
+    font-size: 2vw;  
+}
+
+/* 2.2 main text syling */
+p {
+    font-size: 1.2vw;
+    color: rgb(192, 192, 192);
+}
+
+/* 2.3 quotation styling */
+q {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    font-size: 1vw;
+}
+
+/* 2.4 funFact section text styling */
+.dieHardText {
+
+    color: rgba(255, 255, 255, 0.76);
+    font-size: 3rem;
+    text-shadow: 2px 2px 1px rgb(71, 71, 71);
+}
+
+/* 2.5 laptop text styling */
+.laptopTitle {
+    font-size: 1.8vw;
+    text-align: left;
+}
+
+.laptop label {
+    font-size: 1.2vw;  
+}
+
+
+/* 2.6 footer section styling */
+#footer p {
+    font-size: 0.85vw;
+} 
+
+
+
+/* 3. font adjustments for small screens */
+/* 3.1 regular laptop screens */
+@media (max-width: 1500px){
+
+#footer p {
+    font-size: 14px;
+}
+
+.dieHardText {
+    font-size: 2.8rem;
+}
+
+}
+
+/* 3.2 small screen laptops */
+@media (max-width: 1350px){
+
+    h2 {
+        font-size: 28px;
+    }
+
+    .laptop label, 
+    p {
+        font-size: 16px;
+    }
+
+    q {
+        font-size: 15px;
+    }
+    
+}
+/* 3.3 tablets and small screen laptops */
+@media (max-width: 1100px) {
+
+    h1 {
+        font-size: 26px;
+    }
+
+    .laptopTitle {
+        font-size: 20px;
+    }
+
+    .dieHardText {
+        font-size: 2.4rem;
+    }
+}
+
+
+/* 3.4 tablet screens */
+@media (max-width: 535px){
+    #fac h2 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 400px){
+    .dieHardText {
+        font-size: 2rem;
+    }
+}
+
+/* 3.5 phone screens */
+@media (max-width: 290px){
+    h2 {
+        font-size: 20px;
+    } 
+
+    .laptopTitle {
+        font-size: 16px;
+    }
+
+}

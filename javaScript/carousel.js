@@ -150,4 +150,4 @@ window.addEventListener("load", function(e){
  
 
 
-//~~~~~~~~~~~~~~~~~~~~~~~~~end of the carousel function~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//~~~~~~~~~~~~~~~~~~~~~~~~~end of the carousel script~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

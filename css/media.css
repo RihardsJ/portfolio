@@ -1,24 +1,17 @@
 
 @media (max-width : 1322px){
-    body{
-        background: linear-gradient(45deg, rgb(123 123 122), rgb(12 120 12));
-    }
-
+   
     @keyframes WidthChange {
         0% {width: 90%;}
         100% {width: 50%;}  
     }
 
     .dieHard {
-        align-self: center;
         width: 90%;
     }
 }
 
 @media (max-width : 800px){
-    body{
-        background: linear-gradient(45deg, rgb(123 123 6), rgb(12 12 12));
-    }
     .laptop {
         border-bottom-width: 50px;
         min-width: 250px;
@@ -67,9 +60,6 @@
 }
 
 @media (max-width : 500px){
-    body{
-        background: linear-gradient(45deg, rgb(123 123 6), rgb(12 12 12));
-    }
 
     .profileImg {
         max-width: 225px;
