@@ -1,7 +1,7 @@
 
 //assign variables to carousel objects both need to be in the same order to loop throught together
-let imageArray = ["archer.png", "brothers.png", "caveMan.png", "elephant.png", "iceland.png"];
-let captionArray = ["robin hood", "brothers in arms", "flinstone", "elephant", "iceland"];
+let imageArray = ["archer.png", "brothers.png", "caveMan.png", "elephant.png", "iceland.png", "littleKee.png", "max.png", "walk.png"];
+let captionArray = ["robin hood", "brothers in arms", "flintstone", "elephant", "iceland", "hello!", "wild west", "summer walk"];
 let picture = [];
 
 //definition of buttons 
@@ -102,6 +102,7 @@ function slideBack(){
 //slide carousel on buttom clicks
 rightClick.addEventListener("click", slideForward);
 leftClick.addEventListener("click", slideBack);
+
 //slide carousel on when arrow left or right buttons are pressed
 document.addEventListener("keyup", function(e){
 	let key = e.which || e.keyCode;

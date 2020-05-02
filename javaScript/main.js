@@ -7,7 +7,7 @@ let name = "d";
 
 let divideName = changeName.split(' ');
 
-
+// change name Die Hard -> Ri hard
 burce.addEventListener("click", function (){
     if (name === "d"){
         divideName[0] = "Ri";

@@ -58,7 +58,7 @@ document.addEventListener("keyup", (e) => {
     }        
 });
  
-
+// mediaquery for small screens when menu is obstracting main container
 let media800 = matchMedia("(min-width : 800px)")
 
     menuButton.addEventListener("click", () => {

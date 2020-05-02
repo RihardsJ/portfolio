@@ -1,4 +1,4 @@
-/* button styling and positioning */
+/*~~~ 1. main carousel container styling and positioning ~~~*/
 #carouselContainer {
     border-radius: 3%;
     text-align: center;
@@ -15,7 +15,7 @@
     perspective: 500px;
 }
 
-/* button styling */
+/*~~~ 2. button styling ~~~*/
 .imageFrame button {
     background-color: rgb(92, 87, 87);
     border-style: none;
@@ -46,8 +46,7 @@
     opacity: 0.7;
 }
 
-/*~~~~~~~~~~~~~image positioning~~~~~~~~~~~~~~~~~~*/
-
+/*~~~ 3. image positioning ~~~*/
 
 .imageContainer{
     width: 100%;
@@ -69,10 +68,7 @@
 }
 
 
-
-
-
-/*~~~~~~~~~~~~~image flip animation~~~~~~~~~~~~~~~~~~*/
+/*3.1 image flip animation*/
 
 .rotate {
     transform: translateX(-100%) rotateY(-180deg);
@@ -82,7 +78,7 @@
     transform: rotateY(180deg);
 }
 
-/*~~~~~~~~~~~~~carouse image caption styling~~~~~~~~~~~~~~~~~~*/
+/*3.2 carouse image caption styling*/
 
 .caption{
     color: #e9e5e5;

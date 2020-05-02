@@ -1,6 +1,5 @@
 
-/* button section */
-
+/*~~~ 1. button section ~~~*/
 #menuButton {
     background-color: #055356;
     border-style: none;
@@ -18,7 +17,7 @@
     cursor: pointer;   
 }
 
-/* side navigation color and positioning */
+/*~~~ 2. side navigation color and positioning ~~~*/
 #navigation {
     background: linear-gradient(20deg, #073040, #055557);
     position: fixed;
@@ -46,9 +45,9 @@
     opacity: 0;
 }
 
-    /*~~~~animations - opening and closing menu; link animation during menu opening ~~~~*/
+    /*~~~ 3. animations - menu slide in/out, link drop down ~~~*/
 
- /* menu slide out */
+ /* 3.1 menu slide out */
 .openMenu {
     transform: translateX(250px);
 }
@@ -62,7 +61,7 @@
     transition-timing-function: ease-in-out;
 }
 
-/* menu link animation */
+/* 3.2 menu link animation */
 .menuAnimation {
     animation-fill-mode: forwards;
     animation-name: liAnimation;
@@ -84,7 +83,7 @@
     }
   }
 
- /* change width of main container during animation to fit in the screen  */
+ /* 3.3 change width of main container during animation to fit in the screen  */
 .changeMainWidth {
     animation: WidthChange;
     animation-duration: 2s;
@@ -98,7 +97,7 @@
 
 
 
-  /* onmouse hover menu link animation */
+  /* 3.4 onmouse hover menu link animation */
 
 .link:hover {
     animation: bounce 2s;
